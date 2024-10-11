@@ -15,7 +15,7 @@ void printTree(const std::vector<std::vector<char>>& tree) {
     for (const auto& level : tree) {
         for (const char& ch : level) {
             if (ch == '*') setColor(2); // зелений
-            else if (ch == '@'  ch == '₴'  ch == '%' || ch == '#') setColor(6); // жовтий
+            else if (ch == '@' ||  ch == '₴' || ch == '%' || ch == '#') setColor(6); // жовтий
             std::cout << ch;
         }
         std::cout << std::endl;
