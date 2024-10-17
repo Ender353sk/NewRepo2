@@ -44,17 +44,6 @@ string infixToPostfix(const string& expression) {
         if (isdigit(c)) {
             postfix += c; // Append operand (digit) to postfix expression
         }
-        else if (c == '(') {
-            operators.push(c);
-        }
-        else if (c == ')') {
-            // Pop from stack to postfix until '(' is encountered
-            while (!operators.empty() && operators.top() != '(') {
-                postfix += operators.top();
-                operators.pop();
-            }
-            operators.pop(); // Pop '('
-        }
         else {
             // Current character is an operator
             while (!operators.empty() && precedence(operators.top()) >= precedence(c)) {
