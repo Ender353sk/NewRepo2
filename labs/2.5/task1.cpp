@@ -154,29 +154,29 @@ int main() {
     addToEnd(&head, 40);
     addToEnd(&head, 50);
 
-    std::cout << "Список після додавання елементів: ";
+    std::cout << "List after adding items: ";
     printList(head);
 
     removeFromFront(&head);
-    std::cout << "Список після видалення елемента з початку: ";
+    std::cout << "A list after removing an element from the beginning: ";
     printList(head);
 
     removeFromEnd(&head);
-    std::cout << "Список після видалення елемента з кінця: ";
+    std::cout << "A list after removing an element from the end: ";
     printList(head);
     reverseList(&head);
-    std::cout << "Список після перевертання: ";
+    std::cout << "List after flipping: ";
     printList(head);
 
     sortList(&head);
-    std::cout << "Список після сортування: ";
+    std::cout << "List after sorting: ";
     printList(head);
 
     toTwoWayList(&head);
-    std::cout << "Перетворено на двосторонній циклічний список.\n";
+    std::cout << "Converted to a two-way looping list.\n";
 
     clearList(&head);
-    std::cout << "Список після очищення: ";
+    std::cout << "List after cleaning: ";
     printList(head);
     return 0;
 }
